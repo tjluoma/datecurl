@@ -1,7 +1,7 @@
 
 # README for datecurl #
 
-A [TUAW](http://tuaw.com) reader wrote in asking for help downloading his local newspaper's PDF every day.
+A [TUAW][] reader wrote in asking for help downloading his local newspaper's PDF every day.
 
 He had been trying to use Automator, but wasn't able to get it to work.
 
@@ -21,3 +21,15 @@ Also, the plist assumes that the script has been installed to `/usr/local/bin/da
 If that is not where it has been installed, edit the plist to point to the full path:
 
 	<string>/usr/local/bin/datecurl.sh</string>
+
+## Installation
+
+The .plist file has to be located at ~/Library/LaunchAgents/ in order to be automatically loaded by the system.
+
+If you want to load it without rebooting first, copy the file to ~/Library/LaunchAgents/ and then do this in Terminal:
+
+	cd ~/Library/LaunchAgents/
+
+	launchctl load com.tjluoma.datecurl.plist
+
+[TUAW]:	http://tuaw.com
