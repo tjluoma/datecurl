@@ -1,10 +1,3 @@
-Title:	README for datecurl
-Slug:	README.md
-Date:	2012-03-26
-Author:	TJ Luoma
-Affiliation:	http://luo.ma/
-Copyright:	Timothy J. Luoma
-
 
 # README for datecurl #
 
